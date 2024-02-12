@@ -1,0 +1,5 @@
+{
+  "/page": "app/page.js",
+  "/api/loadformats/route": "app/api/loadformats/route.js",
+  "/mobile/page": "app/mobile/page.js"
+}
