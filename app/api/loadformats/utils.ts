@@ -22,11 +22,11 @@ function validateTitle(title: string, using: string = "  ") {
   disallowed.forEach((n) => {
     title = title.replaceAll(n, using);
   });
-  RoseAndNight(`
-    validated title => 
-    @from : ${initialTitle}
-    @to : ${title}
-    `);
+  // RoseAndNight(`
+  //   validated title => 
+  //   @from : ${initialTitle}
+  //   @to : ${title}
+  //   `);
   return title;
 }
 
