@@ -17,9 +17,6 @@ const apiRoutes = {
 };
 
 export default function Home() {
-  var inputGui = createRef();
-  var formatsGui = createRef();
-  var titleGUI = createRef();
 
   var [leftWidth, setLeftWidth] = useState(100);
 
@@ -28,7 +25,7 @@ export default function Home() {
   );
   var [resultMsg, setResultMsg] = useState(<div></div>);
 
-  function checkIfNeeded(e) {
+  function checkIfNeeded(e : any) {
     var url = e.target.value;
     var showableUrl = url.slice(0,13*2) + ' ...'
 
@@ -55,8 +52,8 @@ export default function Home() {
         
         setLeftWidth(40);
 
-        var fetched: serverResponseLF = await d.json();
-
+        var fetched: serverResponseLF | any = await d.json();
+        
         if (fetched.conditon == "fresh") {
           var allFormats: composedFormat[] = [
             ...fetched.data.audioFormats,
@@ -96,7 +93,6 @@ export default function Home() {
         }}
       >
         <input
-          ref={inputGui}
           onKeyDown={checkIfNeeded}
           type="text"
           className="mobspecialInput mobinputEffect"
@@ -104,12 +100,11 @@ export default function Home() {
         />
       </div>
 
-      <div ref={titleGUI} className="mobtit">
+      <div className="mobtit">
         {roseMsg}
       </div>
 
       <div
-        ref={formatsGui}
         className="bottom"
         style={{ width: 100 - leftWidth + "%" }}
       >

@@ -7,6 +7,9 @@ function SingleFormatUE({ data }: { data: composedFormat }) {
   var mediaSpec = data.media;
   var iris = data.iris;
   var size = "~" + data.size;
+
+  mediaSpec.video = mediaSpec.video ?? {} // note
+
   var resolution = iris != "a" ? mediaSpec.video.resolution : "nothing";
   var audioBitrate = mediaSpec.audio.audioBitrate;
 
@@ -15,8 +18,8 @@ function SingleFormatUE({ data }: { data: composedFormat }) {
 
   var [file, tFile] = useState(undefined);
 
-  var [requestIcon, setRequestIcon] = useState("⤊");
-  var [downloadIcon, setDownloadIcon] = useState("⤸");
+  var [requestIcon, setRequestIcon] : any = useState("⤊");
+  var [downloadIcon, setDownloadIcon] : any = useState("⤸");
 
   var [fileLoaded, setFileLoaded] = useState(false);
 
@@ -59,7 +62,7 @@ function SingleFormatUE({ data }: { data: composedFormat }) {
       tDownloaded(true);
 
       var tempButt = document.createElement("a");
-      tempButt.href = URL.createObjectURL(file);
+      tempButt.href = URL.createObjectURL(file ?? new Blob());
       tempButt.download = data.rose;
 
       document.body.appendChild(tempButt);
