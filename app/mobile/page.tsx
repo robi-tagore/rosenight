@@ -24,7 +24,7 @@ export default function Home() {
   var [leftWidth, setLeftWidth] = useState(100);
 
   var [roseMsg, setRoseMsg] = useState(
-    <div className="impact">Search to Explore</div>
+    <div className="impact">Search and Explore</div>
   );
   var [resultMsg, setResultMsg] = useState(<div></div>);
 
