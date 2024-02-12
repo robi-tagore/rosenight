@@ -1,0 +1,320 @@
+:root {
+  --ultraLight: #f8f9fa;
+  --prettyLight: #e9ecef;
+  --prettyDark: #0000ff;
+  --ultraDark: #ced4da;
+
+  --sitted-simply: 3px 3px 4px var(--ultraDark), -3px -3px 4px var(--ultraLight);
+
+  --floated-max: 6px 6px 8px var(--ultraDark), -6px -6px 8px var(--ultraLight);
+
+  --digged-little: 2px 2px 3px var(--ultraDark) inset,
+    -2px -2px 3px var(--ultraLight) inset;
+  --digged-max: 3px 3px 4px var(--ultraDark) inset,
+    -3px -3px 4px var(--ultraLight) inset;
+
+  --thin-bordered: 1px 1px 1px var(--ultraDark) inset,
+    -1px -1px 1px var(--ultraLight) inset;
+}
+
+*{
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  color: rgba(117, 117, 117, 0.8);
+  letter-spacing: 0.25px;
+
+  transition-duration: 500ms;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  background-color: var(--prettyLight);
+}
+
+.specialInput {
+  height: 50px;
+  width: 50px;
+  /* padding: 0 20px 0 20px; */
+  font-size: 18px;
+  border-radius: 800px;
+  border-color: transparent;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  color: rgba(117, 117, 117, 0.8);
+  cursor: pointer;
+  
+  outline: none !important;
+
+  background-color: var(--prettyLight);
+}
+
+.specialInput::placeholder {
+  color: rgba(117, 117, 117, 1) !important;
+  font-size: 28px !important;
+}
+
+
+
+.container {
+  height: calc(100% - 00px);
+  width: calc(100% - 00px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--digged-little);
+
+  border-radius: 8px;
+
+  .sub{
+    height: calc(100% - 50px);
+    width: calc(100% - 50px);
+  
+    display: flex;
+    align-items: center;
+    /* box-shadow: var(--digged-max); */
+   
+    border-radius: 8px;
+
+  }
+}
+
+.left{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputEffect { 
+  transition-duration: 500ms;
+  box-shadow: var(--sitted-simply);
+  border-width: 6px;
+  text-align: center;
+}
+
+.inputEffect:hover{
+  /* width: 400px; */
+  /* box-shadow: var(--floated-max),var(--digged-little); */
+  box-shadow: var(--floated-max);
+}
+
+.inputEffect:active{
+  box-shadow: var(--digged-max),var(--sitted-simply);
+}
+
+.inputEffect:focus{
+  width: 400px;
+  padding: 0 10px;
+  box-shadow: var(--floated-max),var(--digged-little);
+}
+
+
+.redRose {
+  transition-duration: 250ms;
+  box-shadow: var(--sitted-simply);
+  /* box-shadow: var(--sitted-simply), var(--thin-bordered); */
+}
+
+.redRose:hover {
+  box-shadow: var(--floated-max);
+  /* box-shadow: var(--floated-max), var(--thin-bordered); */
+}
+
+.redRose:active {
+  box-shadow: var(--sitted-simply), var(--digged-max) !important;
+  outline: none;
+}
+
+.redRose:focus {
+  box-shadow: var(--floated-max), var(--digged-little);
+  outline: none;
+}
+
+.formatUIContainer{
+  width: 100%;
+  height: 50px;
+  padding: 10px 0;
+  
+  margin: 15px 0 0 0;
+  border-radius: 100px;
+  border: 5px solid transparent;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: var(--sitted-simply), var(--digged-little);
+}
+
+.formatUIContainer:hover{
+  box-shadow: var(--floated-max);
+}
+
+
+.mediaType{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+}
+.audioBitrate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+.resolution{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+
+.pv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+
+.size{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+
+}
+
+
+
+.spec{
+  width: 55%;
+  margin: 0 0 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.actions{
+  display: flex;
+  flex-direction: row;
+}
+
+.actionButton{
+  border: none;
+  outline: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid transparent;
+
+  border-radius: 100px;
+  font-size: 28px;
+
+  margin: 0 10px 0 0;
+
+  background-color: transparent;
+  box-shadow: var(--sitted-simply);
+  transition-duration: 500ms !important;
+
+}
+
+.actionButton:hover{
+  transition-duration: 500ms;
+  box-shadow: var(--floated-max);
+}
+
+.actionButton:active{
+  box-shadow: none;
+}
+
+
+
+.tit{
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  line-height: 1.5;
+
+  margin: 30px 0 0 0 ;
+}
+
+.impact{
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+}
+
+.roseandnight{
+  height:100%;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 20px 0 0;
+  overflow: auto;
+}
+
+.roseandnight::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+
+
+@keyframes loaderUI{
+  10% {content: '⠙';}
+  20% {content: '⠹';}
+  30% {content: '⠸';}
+  40% {content: '⠼';}
+  50% {content: '⠴';}
+  60% {content: '⠦';}
+  70% {content: '⠧';}
+  80% {content: '⠇';}
+  90% {content: '⠏';}
+}
+
+.loaderAnimi::before {
+  animation: loaderUI 500ms infinite;
+  animation-timing-function: linear;
+  transition-duration: 1s;
+  content: "⠋";
+}
