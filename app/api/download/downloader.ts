@@ -63,7 +63,7 @@ download operation
       },
       (err: promiseErr) => {
         RoseAndNight(`download operation => failure : ${err}`);
-
+        console.log(err)
         night({ ...err, boundary: "while saving" });
       }
     );
