@@ -31,7 +31,7 @@ save operation
           err: err,
         };
 
-        RoseAndNight(`save operation => failure ${promErr}`,promErr);
+        RoseAndNight(`save operation => failure ${promErr}`,err);
 
         night(promErr);
         // rose(createReadStream('audio.mp4'))
