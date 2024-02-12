@@ -1,8 +1,8 @@
 
 const allowDeepDebug = true
-function RoseAndNight(msg : any) {
+function RoseAndNight(...msg : any) {
     if (allowDeepDebug == true) {
-        console.log(msg)
+        console.log(...msg)
     } else {
 
     }

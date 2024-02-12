@@ -31,7 +31,7 @@ save operation
           err: err,
         };
 
-        RoseAndNight(`save operation => ${promErr}`);
+        RoseAndNight(`save operation => failure ${promErr}`,promErr);
 
         night(promErr);
         // rose(createReadStream('audio.mp4'))
@@ -62,8 +62,7 @@ download operation
         rose(dest);
       },
       (err: promiseErr) => {
-        RoseAndNight(`download operation => failure : ${err}`);
-        console.log(err)
+        RoseAndNight(`download operation => failure : ${err}`,err);
         night({ ...err, boundary: "while saving" });
       }
     );
