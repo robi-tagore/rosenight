@@ -4,7 +4,7 @@ var { NextResponse, NextRequest } = require('next/server')
 
 process.env.YTDL_NO_UPDATE
 
-export async function POST(request : typeof NextRequest, response : typeof NextResponse) {   
+export async function POST(request : Request, response : Response) {   
 
     var clientRequest : clientRequestLF = await request.json()    
     var serverResponse : serverResponseLF 

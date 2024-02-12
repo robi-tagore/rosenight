@@ -7,7 +7,7 @@ const { merge } = require("./merger");
 
 process.env.YTDL_NO_UPDATE = 'true'
 
-export async function POST(request : typeof NextRequest, response :typeof NextResponse) {
+export async function POST(request : Request, response : Response) {
 
     var clientReq : clientRequestDF = await request.json()
     console.log(clientReq);    

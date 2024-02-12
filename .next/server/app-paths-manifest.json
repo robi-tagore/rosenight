@@ -1,5 +1,8 @@
 {
-  "/page": "app/page.js",
+  "/_not-found": "app/_not-found.js",
+  "/api/download/route": "app/api/download/route.js",
+  "/api/greet/route": "app/api/greet/route.js",
   "/api/loadformats/route": "app/api/loadformats/route.js",
+  "/page": "app/page.js",
   "/mobile/page": "app/mobile/page.js"
 }

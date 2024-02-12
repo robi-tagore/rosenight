@@ -1,26 +1,41 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/_not-found": [
+      "static/chunks/webpack-c79f6ea4fc0136d7.js",
+      "static/chunks/fd9d1056-dd0a8aa4d7435d3d.js",
+      "static/chunks/69-59a38edcd83176a0.js",
+      "static/chunks/main-app-9dde57f4d4e59988.js",
+      "static/chunks/app/_not-found-3c65c3be65de48f2.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-c79f6ea4fc0136d7.js",
+      "static/chunks/fd9d1056-dd0a8aa4d7435d3d.js",
+      "static/chunks/69-59a38edcd83176a0.js",
+      "static/chunks/main-app-9dde57f4d4e59988.js",
+      "static/css/604c9719621bf9d4.css",
+      "static/chunks/app/layout-425abebf5c4c789f.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-c79f6ea4fc0136d7.js",
+      "static/chunks/fd9d1056-dd0a8aa4d7435d3d.js",
+      "static/chunks/69-59a38edcd83176a0.js",
+      "static/chunks/main-app-9dde57f4d4e59988.js",
+      "static/chunks/app/page-9d2628f0a788d7a1.js"
     ],
     "/mobile/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/mobile/page.js"
+      "static/chunks/webpack-c79f6ea4fc0136d7.js",
+      "static/chunks/fd9d1056-dd0a8aa4d7435d3d.js",
+      "static/chunks/69-59a38edcd83176a0.js",
+      "static/chunks/main-app-9dde57f4d4e59988.js",
+      "static/chunks/app/mobile/page-bf9c842c5ee33983.js"
     ],
     "/mobile/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/mobile/layout.css",
-      "static/chunks/app/mobile/layout.js"
+      "static/chunks/webpack-c79f6ea4fc0136d7.js",
+      "static/chunks/fd9d1056-dd0a8aa4d7435d3d.js",
+      "static/chunks/69-59a38edcd83176a0.js",
+      "static/chunks/main-app-9dde57f4d4e59988.js",
+      "static/css/c59abf45cb9335cf.css",
+      "static/chunks/app/mobile/layout-10338cfb53a41544.js"
     ]
   }
 }
