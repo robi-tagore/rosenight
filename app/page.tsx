@@ -71,7 +71,7 @@ export default function Home() {
         } else {
           setRoseMsg(
             <div>
-              Failed to load any format of
+              Failed to load formats of
               <div className="impact">"{showableUrl}"</div>
             </div>
           );

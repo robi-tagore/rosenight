@@ -22,9 +22,9 @@ merge operation
     ]);
 
 
-    // mergingProcess.stderr.on("data",(d) => {
-    //   console.log(d.toString());
-    // })
+    mergingProcess.stderr.on("data",(d : any) => {
+      console.log(d.toString());
+    })
 
     mergingProcess
       .on("error", (err : Error) => {
