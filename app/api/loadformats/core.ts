@@ -9,7 +9,8 @@ function getAllFormats({ url }: formatSpec): Promise<serverFetched> {
   return new Promise((rose, star) => {
     ytdl.getInfo(url).then(
       (infos: typeof videoInfo) => {
-        RoseAndNight(`load foramt request success @url => ${url}`)
+        RoseAndNight(`load foramt request success @url => ${url} 
+        @format count ${infos.foramt.length}`)
         rose({
           vidTitle: infos.videoDetails.title,
           url: url,
