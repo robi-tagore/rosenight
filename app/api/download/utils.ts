@@ -27,6 +27,7 @@ function aRose() {
 function clearStorageCatche(paths : Array<string>) {
     paths.forEach((p) => {
         unlinkSync(p)
+            RoseAndNight(`storage cleared @path => @${p}`)
     })
 }
 
