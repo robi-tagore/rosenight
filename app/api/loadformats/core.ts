@@ -1,12 +1,15 @@
 var ytdl = require("ytdl-core");
 var { videoInfo } = require("ytdl-core");
+import { RoseAndNight } from "./night";
 import { offlineResponse } from "./offlineData";
 import { bitToMb, validateTitle } from "./utils";
 
 function getAllFormats({ url }: formatSpec): Promise<serverFetched> {
+  RoseAndNight(`load foramt request @url => ${url}`)
   return new Promise((rose, star) => {
     ytdl.getInfo(url).then(
       (infos: typeof videoInfo) => {
+        RoseAndNight(`load foramt request success @url => ${url}`)
         rose({
           vidTitle: infos.videoDetails.title,
           url: url,
