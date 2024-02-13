@@ -16,15 +16,18 @@ pipeable operation
   return ytdl(url, { quality: itag });
 }
 
+
 function save(stream: typeof Readable, dest: string) {
   RoseAndNight(`
 save operation
 @stream : ${stream}
 @dest : ${dest}`);
 
+  var witeableStr = createWriteStream(dest)
+
   return new Promise((rose, night) => {
     stream
-      .pipe(createWriteStream(dest))
+      .pipe(witeableStr)
       .on("error", (err: Error) => {
         var promErr: promiseErr = {
           boundary: "while pipping",

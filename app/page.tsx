@@ -21,7 +21,8 @@ export default function Home() {
   var [leftWidth, setLeftWidth] = useState(100);
 
   var [roseMsg, setRoseMsg] = useState(
-    <div className="impact">Rose and Night</div>
+    // <div className="impact">Rose and Night</div>
+    <div className="impact">Laboni and Antor</div>
   );
   var [resultMsg, setResultMsg] = useState(<div></div>);
 
