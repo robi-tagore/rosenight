@@ -25,8 +25,8 @@ function getAllFormats({ url }: formatSpec): Promise<serverFetched> {
         };
 
         // online vs offline
-        star(errorEdited);
-        // rose(offlineResponse);
+        // star(errorEdited);
+        rose(offlineResponse);
       }
     );
   });
